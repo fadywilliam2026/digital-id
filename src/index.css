@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+video {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.hide-arrow[type='number']::-webkit-inner-spin-button,
+.hide-arrow[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  min-height: 100dvh;
+  background: linear-gradient(26.57deg, #063d2d 8.33%, #0a6046 91.67%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.my-select-container .ant-select .ant-select-selector {
+  border-radius: 0px;
+}
+
+.with-icon .ant-select .ant-select-selector {
+  padding-left: calc(3rem - 8px);
+}
+
+.select-input-white .ant-select .ant-select-selector {
+  background-color: transparent !important;
+  color: white;
+  border: 1px solid white;
+}
+
+.select-input-white .ant-select-arrow {
+  color: white;
+}
+
+.select-input-black .ant-select .ant-select-selector {
+  background-color: transparent !important;
+  color: black;
+  /* border: 1px solid #0A6046 */
+}
+
+.select-input-black .ant-select-arrow {
+  color: black;
+}
+
+.ant-dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.ant-dropdown-menu-item {
+  cursor: default !important;
+  margin: 2px 0 !important;
+}
+
+.ant-modal-content {
+  padding: 0 !important;
+  border-radius: 0px !important;
+}
+
+.ant-drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.contract {
+  background: linear-gradient(26.57deg, #1d2939 8.33%, #344054 91.67%);
+}
+
+/* button:hover {
+  cursor: pointer;
+  color: white !important;
+  background-color: rgba(10, 96, 70, 0.9) !important;
+  border: none;
+} */
+.continue-btn {
+  background-color: #b42318 !important;
+  color: white !important;
+  border: none;
+}
+
+.continue-btn:hover {
+  background-color: #b42318 !important;
+  color: white !important;
+  border: none;
+}
+
+a:hover {
+  color: rgb(55, 171, 136) !important;
+}
+
+.pdf-modal > .ant-modal-content {
+  background-color: transparent !important;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-out;
+}
+
+/* Combine fade-in and fade-out into a single class */
+.fade-in-out {
+  animation: fadeInOut 0.5s ease-in-out;
+}
+
+.options-select .ant-select-arrow {
+  display: none !important;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 640px) {
+  .options-select .ant-select-selection-item {
+    font-weight: bold !important;
+  }
+}
+
+.ant-select-selector:hover {
+  border: 1px solid rgb(55, 171, 136) !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: rgba(10, 96, 70, 0.9) !important;
+  color: white !important;
+}
+
+.ant-menu-item-selected {
+  background-color: rgba(13, 126, 92, 0.4) !important;
+  color: rgba(10, 96, 70) !important;
+}
+
+.ant-statistic-content {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  color: #101828 !important;
+}
+
+.custom-steps .ant-steps-icon {
+  color: #063d2d !important;
+}
+
+.custom-steps .ant-steps-item-tail::after {
+  display: none !important;
+}
+
+.custom-steps .ant-steps-item-title {
+  font-weight: 500 !important;
+}
+
+.custom-steps-success .ant-steps-item-icon {
+  background-color: #9ee6d0 !important;
+  border: none !important;
+}
+
+.custom-steps-success .ant-steps-item-title {
+  color: #0a6046 !important;
+}

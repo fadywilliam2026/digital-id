@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "nick-rudenko.back-n-forth",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
